@@ -18,6 +18,10 @@
 		D5A13E1829EF407800ACC564 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = D5A13E1729EF407800ACC564 /* MapboxMaps */; };
 		D5A41C8129D4BA7200F2F282 /* WrongCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A41C8029D4BA7200F2F282 /* WrongCredentials.swift */; };
 		D5A5FC7D29E615CE0054BD33 /* MainMapViw.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A5FC7C29E615CE0054BD33 /* MainMapViw.swift */; };
+		D5B3C9022A02C93900D9FA9F /* MapBoxMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B3C9012A02C93900D9FA9F /* MapBoxMap.swift */; };
+		D5B3C9042A0300C200D9FA9F /* area5.usdc in Resources */ = {isa = PBXBuildFile; fileRef = D5B3C9032A0300C200D9FA9F /* area5.usdc */; };
+		D5B3C97E2A03048400D9FA9F /* MapV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B3C97D2A03048400D9FA9F /* MapV.swift */; };
+		D5B3C9822A0304EA00D9FA9F /* Model3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B3C9812A0304EA00D9FA9F /* Model3DView.swift */; };
 		D5B4B6B729D383CA00174F5A /* ErrorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B4B6B629D383CA00174F5A /* ErrorPage.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,10 @@
 		D557485C29D4CABA00964B74 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		D5A41C8029D4BA7200F2F282 /* WrongCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongCredentials.swift; sourceTree = "<group>"; };
 		D5A5FC7C29E615CE0054BD33 /* MainMapViw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViw.swift; sourceTree = "<group>"; };
+		D5B3C9012A02C93900D9FA9F /* MapBoxMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxMap.swift; sourceTree = "<group>"; };
+		D5B3C9032A0300C200D9FA9F /* area5.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; path = area5.usdc; sourceTree = "<group>"; };
+		D5B3C97D2A03048400D9FA9F /* MapV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapV.swift; sourceTree = "<group>"; };
+		D5B3C9812A0304EA00D9FA9F /* Model3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model3DView.swift; sourceTree = "<group>"; };
 		D5B4B6B629D383CA00174F5A /* ErrorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPage.swift; sourceTree = "<group>"; };
 		D5BA098E29EF366600BE77E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +93,8 @@
 		D50D5BEF29D231A4003A34E2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D5B3C9062A0301E200D9FA9F /* 3D Models */,
+				D53135662A01B8F00032ACB4 /* Maps */,
 				D54B619029D22C4500D64F75 /* HomePage.swift */,
 				D5B4B6B629D383CA00174F5A /* ErrorPage.swift */,
 				D5A41C8029D4BA7200F2F282 /* WrongCredentials.swift */,
@@ -107,6 +117,15 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D53135662A01B8F00032ACB4 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				D5B3C9012A02C93900D9FA9F /* MapBoxMap.swift */,
+				D5B3C97D2A03048400D9FA9F /* MapV.swift */,
+			);
+			path = Maps;
 			sourceTree = "<group>";
 		};
 		D54B618229D22C4500D64F75 = {
@@ -132,6 +151,7 @@
 		D54B618D29D22C4500D64F75 /* Mapatlan */ = {
 			isa = PBXGroup;
 			children = (
+				D5B3C9052A03019200D9FA9F /* Objects */,
 				D5BA098E29EF366600BE77E4 /* Info.plist */,
 				D50D5BF129D23316003A34E2 /* Models */,
 				D50D5BF029D2321D003A34E2 /* Assets */,
@@ -165,6 +185,22 @@
 				D54B61AB29D22C4600D64F75 /* MapatlanUITestsLaunchTests.swift */,
 			);
 			path = MapatlanUITests;
+			sourceTree = "<group>";
+		};
+		D5B3C9052A03019200D9FA9F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D5B3C9032A0300C200D9FA9F /* area5.usdc */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		D5B3C9062A0301E200D9FA9F /* 3D Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5B3C9812A0304EA00D9FA9F /* Model3DView.swift */,
+			);
+			path = "3D Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5B3C9042A0300C200D9FA9F /* area5.usdc in Resources */,
 				D54B619629D22C4600D64F75 /* Preview Assets.xcassets in Resources */,
 				D54B619329D22C4600D64F75 /* Assets.xcassets in Resources */,
 			);
@@ -304,6 +341,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5A5FC7D29E615CE0054BD33 /* MainMapViw.swift in Sources */,
+				D5B3C9022A02C93900D9FA9F /* MapBoxMap.swift in Sources */,
+				D5B3C9822A0304EA00D9FA9F /* Model3DView.swift in Sources */,
+				D5B3C97E2A03048400D9FA9F /* MapV.swift in Sources */,
 				D557485D29D4CABA00964B74 /* LogIn.swift in Sources */,
 				D5A41C8129D4BA7200F2F282 /* WrongCredentials.swift in Sources */,
 				D54B619129D22C4500D64F75 /* HomePage.swift in Sources */,
@@ -470,6 +510,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Mapatlan/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Tu ubucación es utilizada para mostrar tu ubicación en el mapa";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -499,6 +540,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Mapatlan/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Tu ubucación es utilizada para mostrar tu ubicación en el mapa";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
