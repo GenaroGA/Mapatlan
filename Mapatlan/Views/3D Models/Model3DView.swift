@@ -18,13 +18,13 @@ struct Model3DView: View {
     }
     
     func scene() -> SCNScene {
-        let scene = SCNScene(named: "area5.usdc")!
+        let scene = SCNScene(named: "mapatlanTotal.usdc")!
         
         
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
-        cameraNode.position = SCNVector3(x: -100, y: 15, z: 20) // ajusta la posición de la cámara aquí
-        cameraNode.look(at: SCNVector3(x: -100, y: 80, z: 10))
+        cameraNode.position = SCNVector3(x: -100, y: -200, z: 20) // ajusta la posición de la cámara aquí
+        cameraNode.look(at: SCNVector3(x: -100, y: 80, z: 100))
         scene.rootNode.addChildNode(cameraNode)
         
         return scene

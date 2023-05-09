@@ -23,6 +23,7 @@
 		D5B3C97E2A03048400D9FA9F /* MapV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B3C97D2A03048400D9FA9F /* MapV.swift */; };
 		D5B3C9822A0304EA00D9FA9F /* Model3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B3C9812A0304EA00D9FA9F /* Model3DView.swift */; };
 		D5B4B6B729D383CA00174F5A /* ErrorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B4B6B629D383CA00174F5A /* ErrorPage.swift */; };
+		D5EA9FD62A0AF53500E68B6B /* mapatlanTotal.usdc in Resources */ = {isa = PBXBuildFile; fileRef = D5EA9FD52A0AF53500E68B6B /* mapatlanTotal.usdc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		D5B3C9812A0304EA00D9FA9F /* Model3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model3DView.swift; sourceTree = "<group>"; };
 		D5B4B6B629D383CA00174F5A /* ErrorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPage.swift; sourceTree = "<group>"; };
 		D5BA098E29EF366600BE77E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D5EA9FD52A0AF53500E68B6B /* mapatlanTotal.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; path = mapatlanTotal.usdc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 		D5B3C9052A03019200D9FA9F /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				D5EA9FD52A0AF53500E68B6B /* mapatlanTotal.usdc */,
 				D5B3C9032A0300C200D9FA9F /* area5.usdc */,
 			);
 			path = Objects;
@@ -313,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5EA9FD62A0AF53500E68B6B /* mapatlanTotal.usdc in Resources */,
 				D5B3C9042A0300C200D9FA9F /* area5.usdc in Resources */,
 				D54B619629D22C4600D64F75 /* Preview Assets.xcassets in Resources */,
 				D54B619329D22C4600D64F75 /* Assets.xcassets in Resources */,
