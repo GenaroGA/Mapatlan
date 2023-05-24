@@ -11,7 +11,7 @@ import SwiftUI
 struct MapatlanApp: App {
     var body: some Scene {
         WindowGroup {
-            Model3DView()
+            MapV()
 //            HomePage()
         }
     }
