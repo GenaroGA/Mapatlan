@@ -15,9 +15,10 @@
 		D54B61AA29D22C4600D64F75 /* MapatlanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B61A929D22C4600D64F75 /* MapatlanUITests.swift */; };
 		D54B61AC29D22C4600D64F75 /* MapatlanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B61AB29D22C4600D64F75 /* MapatlanUITestsLaunchTests.swift */; };
 		D557485D29D4CABA00964B74 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D557485C29D4CABA00964B74 /* LogIn.swift */; };
+		D59E0FD42A1E95EB0040CE06 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59E0FD32A1E95EB0040CE06 /* MainMenuView.swift */; };
 		D5A13E1829EF407800ACC564 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = D5A13E1729EF407800ACC564 /* MapboxMaps */; };
 		D5A41C8129D4BA7200F2F282 /* WrongCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A41C8029D4BA7200F2F282 /* WrongCredentials.swift */; };
-		D5A5FC7D29E615CE0054BD33 /* MainMapViw.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A5FC7C29E615CE0054BD33 /* MainMapViw.swift */; };
+		D5A5FC7D29E615CE0054BD33 /* MainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A5FC7C29E615CE0054BD33 /* MainMapView.swift */; };
 		D5B3C9022A02C93900D9FA9F /* MapBoxMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B3C9012A02C93900D9FA9F /* MapBoxMap.swift */; };
 		D5B3C9042A0300C200D9FA9F /* area5.usdc in Resources */ = {isa = PBXBuildFile; fileRef = D5B3C9032A0300C200D9FA9F /* area5.usdc */; };
 		D5B3C97E2A03048400D9FA9F /* MapV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B3C97D2A03048400D9FA9F /* MapV.swift */; };
@@ -55,8 +56,9 @@
 		D54B61A929D22C4600D64F75 /* MapatlanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapatlanUITests.swift; sourceTree = "<group>"; };
 		D54B61AB29D22C4600D64F75 /* MapatlanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapatlanUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D557485C29D4CABA00964B74 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		D59E0FD32A1E95EB0040CE06 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		D5A41C8029D4BA7200F2F282 /* WrongCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongCredentials.swift; sourceTree = "<group>"; };
-		D5A5FC7C29E615CE0054BD33 /* MainMapViw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViw.swift; sourceTree = "<group>"; };
+		D5A5FC7C29E615CE0054BD33 /* MainMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapView.swift; sourceTree = "<group>"; };
 		D5A9591F2A1D3A3600A4B862 /* RealityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealityKit.framework; path = System/Library/Frameworks/RealityKit.framework; sourceTree = SDKROOT; };
 		D5B3C9012A02C93900D9FA9F /* MapBoxMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxMap.swift; sourceTree = "<group>"; };
 		D5B3C9032A0300C200D9FA9F /* area5.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; path = area5.usdc; sourceTree = "<group>"; };
@@ -102,7 +104,8 @@
 				D5B4B6B629D383CA00174F5A /* ErrorPage.swift */,
 				D5A41C8029D4BA7200F2F282 /* WrongCredentials.swift */,
 				D557485C29D4CABA00964B74 /* LogIn.swift */,
-				D5A5FC7C29E615CE0054BD33 /* MainMapViw.swift */,
+				D5A5FC7C29E615CE0054BD33 /* MainMapView.swift */,
+				D59E0FD32A1E95EB0040CE06 /* MainMenuView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -354,7 +357,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5A5FC7D29E615CE0054BD33 /* MainMapViw.swift in Sources */,
+				D59E0FD42A1E95EB0040CE06 /* MainMenuView.swift in Sources */,
+				D5A5FC7D29E615CE0054BD33 /* MainMapView.swift in Sources */,
 				D5B3C9022A02C93900D9FA9F /* MapBoxMap.swift in Sources */,
 				D5B3C9822A0304EA00D9FA9F /* Model3DView.swift in Sources */,
 				D5B3C97E2A03048400D9FA9F /* MapV.swift in Sources */,

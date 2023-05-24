@@ -68,12 +68,27 @@ public class MapViewController: UIViewController {
         case customUri
     }
     
+    // Botón para centrar la cámara en la ubicación del usuario
+    private let centerUserButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Centrar en usuario", for: .normal)
+        button.addTarget(self, action: #selector(centerUser), for: .touchUpInside)
+        return button
+    }()
+    
     // Se llama cuando la vista ha sido cargada
     override public func viewDidLoad() {
         super.viewDidLoad()
         // Configuración de las opciones de MapBox
         let myResourceOption = ResourceOptions(accessToken: "pk.eyJ1IjoiZ2VuYXJvZ2EiLCJhIjoiY2xmazM2c2EwMDZ1OTNwcnZramljOHE3ZCJ9.90IIKm72FYXHoNKNj50HRg")
         let myMapInitOptions = MapInitOptions(resourceOptions: myResourceOption, styleURI: style.uri)
+        
+        // Establecer las coordenadas de los bordes del área permitida
+        let southWest = CLLocationCoordinate2D(latitude: 19.475761, longitude: -99.251578)
+        let northEast = CLLocationCoordinate2D(latitude: 19.489849, longitude: -99.238585)
+        
+        
         
         // Inicialización de la vista de mapa
         mapView = MapView(frame: view.bounds, mapInitOptions: myMapInitOptions)
@@ -93,8 +108,38 @@ public class MapViewController: UIViewController {
             guard let self = self else { return }
             // Añadir el consumidor de ubicación al gestor de ubicaciones del mapa
             self.mapView.location.addLocationConsumer(newConsumer: self.cameraLocationConsumer)
+            
+        
+        }
+        
+        // Añadir el botón a la vista
+        self.view.addSubview(centerUserButton)
+        // Posicionar el botón en la vista
+        NSLayoutConstraint.activate([
+        centerUserButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -20),
+        centerUserButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20),
+        ])
+        
+        // Crear un objeto CoordinateBounds con los bordes del área
+        let bounds = CoordinateBounds(southwest: southWest, northeast: northEast)
+                
+        // Restringir la camara a `bounds`.
+        do {
+            try self.mapView.mapboxMap.setCameraBounds(with: CameraBoundsOptions(bounds: bounds))
+        } catch {
+            print("Failed to set camera bounds: \(error)")
+        }
+        
+    }
+    
+    // Método para centrar la cámara en la ubicación del usuario
+    @objc private func centerUser() {
+        if let userLocation = mapView.location.latestLocation {
+            let cameraOptions = CameraOptions(center: userLocation.coordinate, zoom: 15)
+            mapView.camera.ease(to: cameraOptions, duration: 1.0)
         }
     }
+    
     // Considera agregar otros métodos según tus necesidades
     // Por ejemplo, si quieres cambiar de estilos, agrega el método respectivo y los elementos de UI
 }
@@ -102,6 +147,7 @@ public class MapViewController: UIViewController {
 // Crear una clase que se adhiera a `LocationConsumer` para recibir actualizaciones de ubicación
 public class CameraLocationConsumer: LocationConsumer {
     weak var mapView: MapView?
+    var isFirstLocationUpdate = true
     
     init(mapView: MapView) {
         self.mapView = mapView
@@ -109,6 +155,13 @@ public class CameraLocationConsumer: LocationConsumer {
     
     // Se llama cada vez que se recibe una nueva actualización de ubicación
     public func locationUpdate(newLocation: Location) {
+        
+        guard isFirstLocationUpdate else {
+                    return
+                }
+                
+                isFirstLocationUpdate = false
+        
         // Mueve suavemente la cámara del mapa al centro de la nueva ubicación
         mapView?.camera.ease(
             to: CameraOptions(center: newLocation.coordinate, zoom: 16),

@@ -12,7 +12,6 @@ import SwiftUI
 struct Model3DView: View {
     var body: some View {
         SceneKitView(scene: SCNScene(named: "mapatlanTotal.usdc")!)
-            .edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -24,7 +23,7 @@ struct SceneKitView: UIViewRepresentable {
         view.scene = scene
         view.allowsCameraControl = true
         view.autoenablesDefaultLighting = true
-        view.backgroundColor = UIColor.clear
+        view.backgroundColor = UIColor.gray
         return view
     }
     
