@@ -57,6 +57,7 @@
 		D557485C29D4CABA00964B74 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		D5A41C8029D4BA7200F2F282 /* WrongCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongCredentials.swift; sourceTree = "<group>"; };
 		D5A5FC7C29E615CE0054BD33 /* MainMapViw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViw.swift; sourceTree = "<group>"; };
+		D5A9591F2A1D3A3600A4B862 /* RealityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealityKit.framework; path = System/Library/Frameworks/RealityKit.framework; sourceTree = SDKROOT; };
 		D5B3C9012A02C93900D9FA9F /* MapBoxMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxMap.swift; sourceTree = "<group>"; };
 		D5B3C9032A0300C200D9FA9F /* area5.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; path = area5.usdc; sourceTree = "<group>"; };
 		D5B3C97D2A03048400D9FA9F /* MapV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapV.swift; sourceTree = "<group>"; };
@@ -137,6 +138,7 @@
 				D54B619E29D22C4600D64F75 /* MapatlanTests */,
 				D54B61A829D22C4600D64F75 /* MapatlanUITests */,
 				D54B618C29D22C4500D64F75 /* Products */,
+				D5A9591E2A1D3A3500A4B862 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,6 +189,14 @@
 				D54B61AB29D22C4600D64F75 /* MapatlanUITestsLaunchTests.swift */,
 			);
 			path = MapatlanUITests;
+			sourceTree = "<group>";
+		};
+		D5A9591E2A1D3A3500A4B862 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5A9591F2A1D3A3600A4B862 /* RealityKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D5B3C9052A03019200D9FA9F /* Objects */ = {
@@ -511,10 +521,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mapatlan/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UM276TC8B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Mapatlan/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Tu ubucación es utilizada para mostrar tu ubicación en el mapa";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Es necesario el acceso a tu camara para activar las funcionalidades AR";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Tu ubucación es utilizada para mostrar tu ubicación en el mapa";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -541,10 +553,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mapatlan/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UM276TC8B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Mapatlan/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Tu ubucación es utilizada para mostrar tu ubicación en el mapa";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Es necesario el acceso a tu camara para activar las funcionalidades AR";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Tu ubucación es utilizada para mostrar tu ubicación en el mapa";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
