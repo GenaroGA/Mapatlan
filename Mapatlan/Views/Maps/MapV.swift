@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MapV: View {
     var body: some View {
-        MapBoxView()
+        MapBoxView().ignoresSafeArea(.all, edges: .top)
+
     }
 }
 

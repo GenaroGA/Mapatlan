@@ -24,6 +24,7 @@ struct SceneKitView: UIViewRepresentable {
         view.allowsCameraControl = true
         view.autoenablesDefaultLighting = true
         view.backgroundColor = UIColor.gray
+        
         return view
     }
     

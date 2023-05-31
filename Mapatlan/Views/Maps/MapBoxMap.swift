@@ -73,6 +73,11 @@ public class MapViewController: UIViewController {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Centrar en usuario", for: .normal)
+        
+        let symbolConfiguration = UIImage.SymbolConfiguration(pointSize: 20)
+        let symbolImage = UIImage(systemName: "mappin.and.ellipse", withConfiguration: symbolConfiguration)
+        button.setImage(symbolImage, for: .normal)
+        
         button.addTarget(self, action: #selector(centerUser), for: .touchUpInside)
         return button
     }()
@@ -140,8 +145,6 @@ public class MapViewController: UIViewController {
         }
     }
     
-    // Considera agregar otros métodos según tus necesidades
-    // Por ejemplo, si quieres cambiar de estilos, agrega el método respectivo y los elementos de UI
 }
 
 // Crear una clase que se adhiera a `LocationConsumer` para recibir actualizaciones de ubicación

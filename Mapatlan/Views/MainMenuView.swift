@@ -16,15 +16,15 @@ struct MainMenuView: View
     {
         TabView
         {
-            MapV()
+            MenuView()
                 .tabItem
-                {
-                    Image(systemName: "map.fill")
-                    Text("Mapa")
-                }
+            {
+                Image(systemName: "magnifyingglass")
+                Text("Menu")
+            }
             Model3DView()
                 .tabItem {
-                    Image(systemName: "scale.3d")
+                    Image(systemName: "cube.fill")
                     Text("Vista 3D")
                 }
         }
